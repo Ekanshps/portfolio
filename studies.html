@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ekansh Pratap Singh</title>
+    <link rel="icon" href="img/logo1.png" type="image/icon type">
+
+    <!-- Online Icons Link  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="studies.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+                <a href="index.html" style="--i:1" class="active">Home</a>
+                <a href="about.html" style="--i:2">About</a>
+                <a href="#highschool" style="--i:3">Highschool</a>
+                <a href="#intermediate" style="--i:4">Intermidiate</a>
+                <a href="#graduation" style="--i:5">Graduation</a>
+                
+        </nav>
+    </header>
+
+                                   <!-- Highschool section -->
+    <section class="highschool" id="highschool">
+        <h2 class="about-heading">My <span>Highschool</span> Journey</h2>
+        <div class="highschool-container">
+            <div class="slider">
+            <img src="img/s1.jpg" alt="Image 1">
+            <img src="img/s2.jpg" alt="Image 2">
+            <img src="img/s3.jpg" alt="Image 3">
+            <img src="img/s4.jpg" alt="Image 4">
+            </div>
+
+          <div class="education-container">
+
+            <div class="education-box">
+                <i class=''></i>
+                <h3>High School</h3>
+              <p>School Name: "Shubash Inter Collage"</p>
+              <p>Location: Umari Begumganj Gonda</p>
+              <p>Year Graduated: 2019</p>
+              <p>Academic Achievements: I scored in Top 5 in marks In Highschool.</p>
+              <p>Extracurricular Activities: Secured first place in the Cricket competition in 2019 in Shubash Inter Collage, <br>
+                showcasing sports intrests.
+              </p>
+                
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+                                          <!-- Intermediate Section  -->
+
+    <section class="intermediate" id="intermediate">
+        <h2 class="about-heading">My <span>Intermediate</span> Journey</h2>
+        <div class="intermediate-container">
+        <div class="slider">
+            <img src="img/s1.jpg" alt="Image 1">
+            <img src="img/s2.jpg" alt="Image 2">
+            <img src="img/s3.jpg" alt="Image 3">
+            <img src="img/s4.jpg" alt="Image 4">
+        </div>
+        
+      <div class="education-container">
+
+        <div class="education-box">
+            <h3>Intermediate / College</h3>
+          <p>School Name: "Shubash Inter Collage"</p>
+          <p>Location: Umari Begumganj Gonda</p>
+          <p>Year Graduated: 2021</p>
+          <p>Focus Area: PCM (Physics, Chemistry, Math)</p>
+          <p>Academic Achievements: I scored in Top 10 in marks In Intermediate.</p>
+          <p>Extracurricular Activities: Secured second place in the Cricket competition in 2021 in Shubash Inter Collage,<br> 
+            showcasing sports intrests.
+          </p>
+            
+        </div>
+
+        </div>
+    </section>
+
+                                         <!-- Graduation section -->
+
+    <section class="graduation" id="graduation">
+
+        <h2 class="about-heading">My<span> Graduation </span>Journey</h2>
+        <div class="graduation-container">
+           <div class="slider">
+            <img src="img/a1.jpg" alt="Image 1">
+            <img src="img/a2.jpg" alt="Image 2">
+            <img src="img/a3.jpg" alt="Image 3">
+            <img src="img/a4.jpeg" alt="Image 4">
+        </div>
+
+      <div class="education-container">
+
+        <div class="education-box">
+            <h3>University</h3>
+            <p>University Name: "Dr. Ram Manohar Lohia Awadh University Ayodhya"</p>
+            <p>Location: Faizabad Naka Chungi "Ayodhya" </p>
+            <p>Year Graduated: 2024</p>
+            <p>Degree Earned: BCA (Bechalor Of Computr Application)</p>
+            <p>Specialization: Web Devlopment</p>
+            <p>Extracurricular Leadership: Works with GDSC Core Team Members to stablish GDSC<br> in our University,
+              and bring out some GDSC Events.
+            </p>
+            <p>Career Goals: Wants to Became a Web devloper, and thinking About establish our own Business whenever
+              <br>I'm able to do that. Also wants to Become a Youtuber.
+            </p>
+            
+        </div>
+        
+        </div>
+
+    </section>
+
+     <!-- Footer Design -->
+
+     <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Ekansh Pratap Singh | All Rights Reseverd.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#highschool"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+     </footer>
+
+     <!-- scroll reveal -->
+
+     <script src="https://unpkg.com/scrollreveal"></script>
+     
+
+    <!-- Custom Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+      <!-- Function to make browser window blink in task bar  -->
+    <script> 
+  
+        var comeBackAlerts = (function() {
+          var oldTitle = document.getElementsByTagName('h1')[0].innerText; /* document.title; */
+          var msg = "Come Again:)";
+          var intervalId;
+          var blink = function() {
+            intervalId = setInterval(function() {
+              /* document.title = document.title == msg ? ' ' : msg; */
+              if (document.title == msg) {
+                document.title = oldTitle;
+              } else {
+                document.title = msg;
+              }
+            }, 1000);
+          };
+          var clear = function() {
+            clearInterval(intervalId);
+            document.title = oldTitle;
+            window.onmousemove = null;
+            window.onmouseout = null;
+            intervalId = null;
+          };
+          return function() {
+            if (!intervalId) {
+              blink();
+              window.onmousemove = clear;
+            }
+          };
+        }());
+        
+        /* Running the functions */
+        
+        visibilityChange(comeBackAlerts);</script>
+        
+
+<!-- slider all images js -->
+<script>
+    const sliders = document.querySelectorAll('.slider');
+
+    function startSlider(slider) {
+        const images = slider.querySelectorAll('img');
+        let currentImageIndex = 0;
+
+        function nextImage() {
+            images[currentImageIndex].style.opacity = 0;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].style.opacity = 1;
+        }
+
+        // Initially hide all images except the first one
+        for (let i = 1; i < images.length; i++) {
+            images[i].style.opacity = 0;
+        }
+
+        setInterval(nextImage, 5000); // Change image every 3 seconds
+    }
+
+    // Start the slider for each section with the class 'slider'
+    sliders.forEach(startSlider);
+</script>
+
+
+</body>
+
+</html>
